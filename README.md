@@ -5,14 +5,14 @@ Dockerfile with JDK, Maven and NodeJS. Versions are configurable.
 
 You may build image with desired versions of JDK, Maven and NodeJS:
 - **MAVEN_JDK_VERSION**=`3-jdk-8` see available versions - [maven docker image](https://hub.docker.com/_/maven/)
-- **NODE_VERSION**=`10` see available version - [Node.js Binary Distributions](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
+- **NODE_VERSION**=`12` see available version - [Node.js Binary Distributions](https://github.com/nodesource/distributions/blob/master/README.md#debinstall)
 
 ### Examples
 
 #### Command Line
 
-`docker build --build-arg NODE_VERSION=10 --build-arg MAVEN_JDK_VERSION=3-jdk-8 -f Dockerfile -t jdk-mvn-node .`
+`docker build --build-arg NODE_VERSION=12 --build-arg MAVEN_JDK_VERSION=3-jdk-8 -f Dockerfile -t jdk-mvn-node .`
 
 #### Jenkins Pipeline
 
-`docker.build('jdk-mvn-node', '--build-arg NODE_VERSION=10 --build-arg MAVEN_JDK_VERSION=3-jdk-8 -f Dockerfile .')`
+`docker.build('jdk-mvn-node', '--build-arg NODE_VERSION=12 --build-arg MAVEN_JDK_VERSION=3-jdk-8 -f Dockerfile .')`
