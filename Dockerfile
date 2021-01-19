@@ -6,7 +6,7 @@ USER root
 
 # install nodejs as root
 # https://github.com/nodesource/distributions/blob/master/README.md#debinstall
-ARG NODE_VERSION=12
+ARG NODE_VERSION=14
 RUN \
     curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash - && \
     apt-get update -qqy && \
