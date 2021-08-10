@@ -1,6 +1,10 @@
 # jdk-maven-node
 Dockerfile with JDK, Maven and NodeJS. Versions are configurable.
 
+## Updates
+
+The image updates every week on Monday.
+
 ## Build
 
 You may build image with desired versions of JDK, Maven and NodeJS:
