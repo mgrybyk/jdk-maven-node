@@ -1,4 +1,4 @@
-ARG MAVEN_JDK_VERSION=3-jdk-17
+ARG MAVEN_JDK_VERSION=3-eclipse-temurin-17
 
 FROM maven:${MAVEN_JDK_VERSION}
 USER root
