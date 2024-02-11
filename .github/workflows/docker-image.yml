@@ -2,16 +2,14 @@ name: jdk-maven-node Docker Image
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron:  '0 0 1 * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        NODE_VERSION: [lts]
-        JAVA_VERSION: [17]
+        NODE_VERSION: [18, 20]
+        JAVA_VERSION: [17, 21]
     steps:
       - uses: actions/checkout@v2
       - name: Docker build and publish
