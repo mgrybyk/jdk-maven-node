@@ -1,4 +1,7 @@
 # jdk-maven-node
+
+> DEPRECATED!
+
 Dockerfile with JDK, Maven and NodeJS. Versions are configurable.
 
 ## Updates
