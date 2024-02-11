@@ -12,3 +12,5 @@ RUN \
     apt-get update -qqy && \
     apt-get install -qqy gcc g++ make nodejs && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/*
+
+RUN echo "" && echo "jdk-maven-node IS DEPRECATED!" && echo ""
